@@ -243,7 +243,6 @@ const slider = function () {
   btnLeft.addEventListener('click', prevSlide);
 
   document.addEventListener('keydown', function (e) {
-    console.log(e);
     if (e.key === 'ArrowLeft') prevSlide();
     if (e.key === 'ArrowRight') nextSlide();
   });
@@ -257,12 +256,10 @@ const slider = function () {
   });
 };
 slider();
+
 ////////////////////////////////////////////////////////////////////////
 
-/*
-
 // Message cookies
-const header = document.querySelector('.header');
 const message = document.createElement('div');
 
 message.classList.add('cookie-message');
@@ -274,18 +271,10 @@ header.append(message);
 document
   .querySelector('.btn--close-cookie')
   .addEventListener('click', () => message.remove());
-  //
+//
 
 message.style.backgroundColor = '#37383d';
 message.style.width = '120%';
 
 message.style.height =
   Number.parseFloat(getComputedStyle(message).height, 10) + 40 + 'px';
-  //
-  
-*/
-/////////////////////////////////////////////////////////////////////
-
-/*
-! Building a tabbed component (tabs like in browser)
-*/
